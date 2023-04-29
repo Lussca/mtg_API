@@ -4,14 +4,21 @@ html, body {
   font-family: sans-serif;
 }
 
-.App {
+.app{
+  background-image: url('../imgs/background.png');
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.app {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-} 
+  
+}
 
 .inputSearch{
   margin-right: 10px;
@@ -34,7 +41,7 @@ html, body {
   border-radius: 5%;
 }
 
-.infoText{
-  text-align: justify;
+.infoCard{
   width: 14%;
+  text-align: justify;
 }

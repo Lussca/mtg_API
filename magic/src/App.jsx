@@ -16,16 +16,16 @@ function App() {
   };
 
   return (
-    <div className='App'>
+    <div className='app'>
       <div className="search">
         <input className='inputSearch' type="text" value={cardName} onChange={(e) => setCardName(e.target.value)} />
         <button onClick={handleCardSearch}>Search</button>
       </div>
       {cardImageUrl && <img className='card' src={cardImageUrl} alt={cardName} />}
       <div className='infoCard'>
-        {cardTypeLine && <p className='info'>{cardTypeLine}</p>}
+        {cardTypeLine && <p>{cardTypeLine}</p>}
+        {cardInfo && <p>{cardInfo}</p>}
       </div>
-      {cardInfo && <p className='infoText'>{cardInfo}</p>}
     </div>
   );
 }
